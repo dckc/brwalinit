@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>dApp to Browser Config</title>
+    </head>
+    <body>
+        <h1>dApp to Browser Config</h1>
+        <form id="config">
+            <label>Address of wallet service
+                <input name="walletAddress" placeholder="host:port"/></label>
+            <button>Ok</button>
+        </form>
+        <script src="ui.js"></script>
+        <script>
+            startUI({
+                form: document.getElementById('config'),
+                store: localStorage,
+            });
+        </script>
+    </body>
+</html>
